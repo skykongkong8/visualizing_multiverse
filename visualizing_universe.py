@@ -1,4 +1,4 @@
-#Task 2 (optional, extra credits)
+#Visualizing orbit movement of Sun, Earth, and Mars
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import animation  # we need this to create an animation with matplotlib
@@ -25,28 +25,9 @@ y_mars = r_mars*np.sin(mars_orbit)
 plt.plot(x_mars, y_mars, 'r',linestyle ='dashed', lw=1)
 
 
-#[DIY1] (optional, extra credits) 
-# Q: what is the syntax to plot a "red triangle" at x=3 and  y=5 ? 
-# You can write the question and answer as a text cell and include it in your report.
-# If you like, you can even add a new code cell, type your answer and show the figure output
-# When adding the answer, please specify the DIY number clearly in the text cell or code cell appropriately.
-
-#draw the Earth's orbit as the blue solid line (Background)
-
-
-
-# connect x_orbit and y_orbit and generate a blue, solid-line circle "Earth's orbit" (background)
-# Set linewidth=1 (or lw=1) 
-
-
-
-# ***** create many frames to make an animation --> Earth will be rotating around the Sun following the blue circle *****
-# set the number of frames in the animation to be 500 
-# If you use Nframe=500, it would take some time (more than minutes) to generate the animation.
-
 Nframes =  50
-# Nframes = 500
-
+# Nframes = 500 #try Frame changes!
+rotation =  2.*np.pi/Nframes
 # initialize
 # create an empty class "Earth," to be filled by data points (x,y) along the Earth's orbit for making an animation
 # set the marker style to be a blue filled-circle with a size 8
